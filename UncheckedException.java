@@ -31,14 +31,16 @@ public class UncheckedException {
 		catch(ArithmeticException ae)
 		{
 			System.out.println("cannot divided by zero");
-			//ae.printStackTrace();
+			ae.printStackTrace();
 		}
 		catch(ArrayIndexOutOfBoundsException aie) {
 			System.out.println("Please provide correct index ");
+			aie.printStackTrace();
 		}
 		catch(NegativeArraySizeException nae)
 		{
 			System.out.println("Please provide positive size ");
+			nae.printStackTrace();
 		}
 		catch(Exception e)
 		{
